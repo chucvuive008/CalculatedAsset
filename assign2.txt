@@ -1,0 +1,43 @@
+Assign2: Due 11:59PM October 13
+
+A user has stocks in many companies. Write a program that will find the net asset value of their stocks and display it.
+
+The program will read a file which has details of stock symbols and the number of shares of each stock the user owns.
+For example
+XYZ1 1000
+XYZ2 1500
+XYZ3 2312
+...
+XYZI 1000
+XYZJ 1000
+
+Assuming the price for each of those stocks on the top is $1, $2, and $3, and the stocks at the bottom are either invalid or runs into error when fetching.
+Then the output would look like:
+
+Symbol  Shares  Net Asset Value
+--------------------------------
+XYZ1  	1000		$1000.00
+XYZ2	1500		$3000.00
+XYZ3  	2312  	        $6936.00
+...
+Total       $.....total of all the net asset values...
+
+Errors:
+XYZI  Invalid stock symbol
+XYZJ  Error reaching the network
+
+You may obtain the stock price from the URL
+http://download.finance.yahoo.com/d/quotes.csv?s=SYMBOL&f=snbaopl1
+
+where SYMBOL should be replaced by a symbol. We can extract the value of the stock price from the numbers returned by this link.
+
+A few suggestions that can help you succeed on this assignment:
+
+Start really early, move forward incrementally with the help of feedback loops.
+
+Don't bring in dependencies until you no longer can avoid them (last responsible moment).
+
+Start with a few tests, minimum code to make those work. 
+
+Bring forward practices and tools you learned from assignment 1. Verify that your build is passing for assignment 2 in continuous integration.
+
